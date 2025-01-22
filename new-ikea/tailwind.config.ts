@@ -14,5 +14,15 @@ export default {
       },
     },
   },
+  module.exports = {
+    theme : {
+      extend:{
+        colors:{
+          primary: "#FF0000",
+          secondary: "#00FF00"
+        }
+      }
+    }
+  },
   plugins: [],
 } satisfies Config;
