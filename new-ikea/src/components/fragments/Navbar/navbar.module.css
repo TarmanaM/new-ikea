@@ -1,0 +1,14 @@
+
+  
+  .navbar {
+    background-color:whitesmoke;
+  }
+  
+  .navbar-link {
+    color: var(--text-color);
+  }
+  
+  .navbar-link:hover {
+    background-color: var(--primary-color);
+  }
+  

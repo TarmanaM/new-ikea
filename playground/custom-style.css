@@ -1,0 +1,31 @@
+.test1{
+    border : 1px solid red;
+}
+.test2{
+    border : 1px solid green;
+}
+.test3{
+    border: 1px solid blue;
+}
+:root{
+    --base-width : 1440px;
+}
+.navbar-custom{
+    height: 144px;
+}
+
+.img-con{
+    width: 12.71% ; /* Lebar elemen */
+    height: 200px;/* Tinggi elemen */
+    overflow: hidden; /* Area gambar di luar elemen disembunyikan */
+    position: relative; /* Untuk kontrol posisi anak elemen */
+    cursor: grab; /* Ikon tangan untuk interaksi */
+}
+.img-con img{
+    position: absolute; /* Untuk memungkinkan pergeseran */
+    width: auto; /* Gambar mempertahankan aspek rasio */
+    height: 100%; /* Tinggi gambar memenuhi elemen */
+    top: 0;
+    left: 0;
+    transition: transform 0.1s ease; 
+}
