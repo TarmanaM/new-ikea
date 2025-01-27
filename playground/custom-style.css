@@ -14,18 +14,34 @@
     height: 144px;
 }
 
-.img-con{
-    width: 12.71% ; /* Lebar elemen */
-    height: 200px;/* Tinggi elemen */
-    overflow: hidden; /* Area gambar di luar elemen disembunyikan */
-    position: relative; /* Untuk kontrol posisi anak elemen */
+.img-cons {
+    /* Tinggi elemen */
+ /* Gambar latar */
+    background-size: auto 100%; /* Gambar memenuhi tinggi elemen dengan rasio asli */
+    background-repeat: no-repeat; /* Tidak mengulang gambar */
+    background-position: center; /* Awalnya gambar berada di tengah */
+    overflow: hidden; /* Area di luar elemen disembunyikan */
     cursor: grab; /* Ikon tangan untuk interaksi */
-}
-.img-con img{
-    position: absolute; /* Untuk memungkinkan pergeseran */
-    width: auto; /* Gambar mempertahankan aspek rasio */
-    height: 100%; /* Tinggi gambar memenuhi elemen */
-    top: 0;
-    left: 0;
-    transition: transform 0.1s ease; 
-}
+    
+  }
+/* CSS untuk menyembunyikan scrollbar */
+.cstm-scroll {
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .cstm-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+  .py-base{
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .py-base-half{
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .px-base{
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
